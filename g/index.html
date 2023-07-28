@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Pagina web">
+    <meta name="keywords" content="umg" <title>pagina de echa en HTML</title>
+    <link href="/content/estilo1.css" rel="stylesheet">
+
+    <style>
+        /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6e1e9a;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li.active a {
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.pageFooter {
+    background-color: #6e1e9a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .content {
+        padding-right: 0;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">Noticia</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contactos </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="content">
+            <article class="top">
+                <header>
+                    <h2><a href="#">Que es html</a></h2>
+                </header>
+                <footer>
+                    <h5> ¿Qué es y para qué sirve el HTML?</h5>
+                </footer>
+                <content>
+                    <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+                    <p>¿Qué es una página web en HTML? Una página HyperText Markup Language o HTML es un documento de texto con marcas. Forma parte del lenguaje utilizado para la elaboración de sitios web y hace referencia a los enlaces que conectan páginas web entre sí, dentro de un único sitio o varios.</p>
+                </content>
+            </article>
+            <article class="Botom">
+                <header>
+                    <h2><a href="#">Que es css</a></h2>
+                </header>
+                <footer>
+                    <h5>que es css</h5>
+                </footer>
+                <content>
+                    <p>CSS es uno de los lenguajes más importantes que se utilizan para ordenar las instrucciones referentes a la apariencia de un sitio y presentar los contenidos de una página de forma atractiva. De este modo, HTML se emplea para estructurar el contenido de un sitio, mientras que CSS se usa para estructurar su presentación.</p>
+                    <p>Qué es un archivo CSS
+
+                      El formato CSS representa hojas de estilo en cascada (Cascading Style Sheets). Es un lenguaje utilizado para especificar la presentación de documentos en una página web y se almacena en archivos nombrados con la extensión CSS</p>
+                </content>
+            </article>
+        </div>
+        <aside class="top-sidebar">
+            <h2>Navegacion</h2>
+            <ul class="navegacion">
+                <li><a href=""></a>Inicio</li>
+                <li><a href=""></a>Coticias</li>
+                <li><a href=""></a>Acerca de</li>
+                <li><a href=""></a>Contacto </li>
+
+            </ul>
+        </aside>
+        <aside class="bottom-sidebar">
+            <div class="featured">
+                <h2>javascrip</h2>
+                <p>JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones de JavaScript pueden mejorar la experiencia del usuario de un sitio web.</p>
+                <a href="leer mas">leer mas</a>
+            </div>
+        </aside>
+    </div>
+    <footer class="pageFooter">
+        <p>www.Desarrollo-web-28-07-2023.com</p>
+    </footer>
+
+</body>
+
+</html>
